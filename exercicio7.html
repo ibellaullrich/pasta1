@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{border: 1px solid black; box-sizing: border-box;}
+        body{display: grid;
+        /** grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: 150px; **/
+        grid-template-areas:
+        "header header header"
+        "main main sidebar"
+        "footer footer footer";
+        ;
+        }
+        #caixinha1{
+            background-color: rgb(218, 70, 198);
+            grid-area: header;
+        }
+        #caixinha2{background-color: rgb(204, 95, 214);
+        grid-area: main;
+        }
+        
+        #caixinha3{background-color: rgb(224, 154, 224);
+         grid-area: sidebar;}
+        
+        #caixinha4{background-color: rgb(134, 156, 214);
+        grid-area: footer;}
+        
+        #caixinha5{background-color: rgb(230, 33, 187);}
+        #caixinha6{background-color: rgb(185, 41, 185);}
+        #caixinha7{background-color: rgb(250, 171, 250);}
+    </style>
+</head>
+<body>
+ <div class="box" id="caixinha1">1</div>
+ <div class="box" id="caixinha2">2</div>  
+ <div class="box" id="caixinha3">3</div>
+ <div class="box" id="caixinha4">4</div>
+ <div class="box" id="caixinha5">5</div>
+ <div class="box" id="caixinha6">6</div>
+ <div class="box" id="caixinha7">7</div>
+    
+</body>
+</html>
