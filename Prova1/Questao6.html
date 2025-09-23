@@ -8,33 +8,67 @@
 <body>
     <div>
         <style>
-            .box{
+            .bandeiras{
+                display: flex;
+                gap:20px;
+                margin:20px;
+            }
+            .bandeira1J{
+                width: 200px;
+                height:120px;
+                background-color: white;
                 border: 2px solid black;
-                width: 1000px;
-                height: 900px;
-            }
-            .bolinha1{
-                width: 160px;
-                height: 160px;
-                border-radius: 70px;
-                background-color: blueviolet;
-                border-radius: 200px;
                 position: relative;
-                top: 0px;
-                left: 0px;
+        
+            }
+            .bandeira1J div{
+                width: 60px;
+                height: 60px;
+                background-color: red;
+                position:relative;
+                border-radius: 50%;
+            }
+        .bandeira2F{
+            width: 200px;
+            height: 120px;
+            display: flex;
+            border: 1px solid black;
 
-            }
-            .bolinha2{
-                width: 160px;
-                height: 160px;
-                border-radius: 70px;
-                background-color: rgb(47, 26, 66);
-                border-radius: 200px;
-                position: relative;
-                top: -10px;
-                left: -15px;
-            }
+        }
+        .bandeira2F div{
+            flex: 1;
+        }
+
+        .bandeira2F .azul{background-color: blue;}
+        .bandeira2F .branco{background-color: white;}
+        .bandeira2F .vermelho{background-color: red;}
+
+        .bandeira3I{
+            width: 200px;
+            display: flex;
+            border: 1px black;
+        }
+        .bandeira3I div{
+            flex: 1;
+        }
+        .bandeira3I .verde{background-color: green;}
+        .bandeira3I .branco{background-color: white;}
+        .bandeira3I .vermelho{background-color: red;}
+              
         </style>
+        <head>
+            <body>
+                <div class="bandeiras">
+                    <div class="bandeira1J">
+                        <div class="bandeira1J div"></div>
+                    </div>
+
+                    <div class="bandeira2F">
+                
+                    </div>
+                </div>
+            </body>
+        </head>
 
         
     </div>
